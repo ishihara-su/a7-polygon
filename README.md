@@ -1,32 +1,24 @@
-# a5-1st-classroom
-First GitHub Classroom Assignment
-
-このプロジェクトは、システム工学応用実習II-2026の課題 A5用です。
+# a7-polygon
+このプロジェクトは、システム工学応用実習II-2026の課題 A7用です。
 
 ファイルの編集作業などは、ローカルで行います。
 
-# 準備
-- まず、このリポジトリをクローンしてローカルにリポジトリをつくります。
+## 準備
+- このリポジトリをクローンしてローカルにリポジトリをつくります。
 
-# hello.pyの編集とコミット、push
-- hello.pyを編集して、`print("Hello Hamamatsu")` のようなコードを1行追加してください。
-- `python3 hello.py`としてプログラムを実行し、正しく動くことを確認してください。
-- それが終わったら、`git commit -a -m "あなたのコメント"`として編集結果をコミットしてください。
-- その後、`git push`として、GitHubにあるリモートリポジトリに編集結果を反映させます。
+## 再生するプログラム
 
-# sum.pyの追加とコミット、push
-- 次に、sum.pyという新しいファイルをつくり、以下のコードを加えて下さい。
-```
-num1 = 1.5
-num2 = 6.3
+polygon.py を改造して、クラスPolygonを継承したサブクラス Triangle（正三角形）、Square（正方形）をつくり、それぞれ、以下の2つのメソッドを実装してください。
 
-sum = num1 + num2
-print(f'The sum of {num1} and {num2} is {sum}.')
-```
+- get_perimeter() 周囲長を実数で返す
+- get_area() 面積を実数で返す
 
-- sum.pyの動作を確認したら、編集結果をコミットしてください。
-- 提出前に、`git tag submit` として、現在のバージョンにタグを付けます。
+なお、クラスPolygonの現状のコードでは、get_perimeter()およびget_area()は画面にNot implemented （実装されていません）と表示するようになっていますが、TriangleおよびSquareに実装するget_perimeter()とget_area()では何も表示せず、単に周囲長、あるいは面積を返すようにしてください。
+
+## 提出方法
+
+- 提出前に完成版をmainブランチにマージしてください。
+- `git tag submit` として、mainブランチの提出用のバージョンにタグを付けます。
+   - 修正版を提出する場合、タグを submit1, submit2のように、後に数字を付けた形式にして下さい。1回目の再提出は、submit1となります。
 - `git push`として、結果をGitHub上のリポジトリに反映させます。
-
-- 修正版を提出する場合、タグを submit1, submit2のように、後に数字を付けた形式にして下さい。1回目の再提出は、submit1となります。
   
